@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOOKING</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Booking Form</h2>
+      <hr />
+      <br />
+      <div class="form">
+        Name: <input type="text" name="name" id="name" /> <br /><br />
+        Email: <input type="email" name="email" id="email" /> <br /><br />
+        Phone Number: <input type="number" name="ph" id="ph" /> <br /><br />
+        CheckIn Date: <input type="date" name="checkin" id="checkin" /> <br /><br />
+        CheckOut Date: <input type="date" name="checkout" id="checkout" /> <br /><br />
+      </div>
+
+      <div class="buttons">
+        <button id="Book">BOOK NOW</button>
+      </div>
+    </div>
+    <style>
+        body {
+  
+  background-image: url("Bg.jpeg");
+}
+.container {
+
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  /* border: 2px solid red; */
+  font-family: arial;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.427);
+  border-radius: 20px;
+  
+}
+h2 {
+  text-align: center;
+}
+.container div {
+  text-align: center;
+}
+input {
+  width: 250px;
+  padding: 5px;
+}
+button {
+  width: 70px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  background-color: cornflowerblue;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+
+    </style>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+
+    <script src="./fireConfig.js"></script>
+
+    <script src="./book.js"></script>
+  </body>
+</html>
