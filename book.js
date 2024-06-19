@@ -26,6 +26,19 @@ document.getElementById("Book").onclick = function () {
       NC: nc,
       NA : na,
     });
+
+  var alertMessage = "Your booking request is successful.\n\n";
+  alertMessage += "Name: " + Name + "\n";
+  alertMessage += "Email: " + Email + "\n";
+  alertMessage += "Phone: " + Ph + "\n";
+  alertMessage += "Check-in: " + Checkin + "\n";
+  alertMessage += "Check-out: " + Checkout + "\n";
+  alertMessage += "NA: " + na + "\n";
+  alertMessage += "NC: " + nc + "\n";
+
+    alert(alertMessage);
+
+  
   alert("Your request is successful. Please wait for 48 hours for the confirmation.");
   document.getElementById("name").value = "";
   document.getElementById("email").value = "";
