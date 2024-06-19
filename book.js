@@ -6,7 +6,9 @@ function readFom() {
   Ph = document.getElementById("ph").value;
   Checkin = document.getElementById("checkin").value;
   Checkout = document.getElementById("checkout").value;
-  console.log(Name, Email, Ph, Checkin, Checkout);
+  nc = document.getElementById("NC").value;
+  na = document.getElementById("NA").value;
+  console.log(Name, Email, Ph, Checkin, Checkout,nc,na);
 }
 
 document.getElementById("Book").onclick = function () {
@@ -21,12 +23,16 @@ document.getElementById("Book").onclick = function () {
       ph: Ph,
       checkin: Checkin,
       checkout: Checkout,
+      NC: nc,
+      NA : na,
     });
   alert("Booking Successful. Conformation mail will be sent soon");
   document.getElementById("name").value = "";
   document.getElementById("email").value = "";
   document.getElementById("Ph").value = "";
   document.getElementById("checkin").value = "";
+  document.getElementById("NA").value = "";
+  document.getElementById("NC").value = "";
   document.getElementById("checkout").value = "";
 };
 
