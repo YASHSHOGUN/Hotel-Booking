@@ -1,4 +1,4 @@
-var Name, Email, Ph, Checkin, Checkout,nc,na,TOR;
+var Name, Email, Ph, Checkin, Checkout,nc,na;
 
 function readFom() {
   Name= document.getElementById("name").value;
@@ -8,8 +8,8 @@ function readFom() {
   Checkout = document.getElementById("checkout").value;
   nc = document.getElementById("NC").value;
   na = document.getElementById("NA").value;
-  TOR = document.getElementById("tor").value;
-  console.log(Name, Email, Ph, Checkin, Checkout,nc,na,TOR);
+
+  console.log(Name, Email, Ph, Checkin, Checkout,nc,na);
 }
 
 document.getElementById("Book").onclick = function () {
@@ -26,7 +26,7 @@ document.getElementById("Book").onclick = function () {
       checkout: Checkout,
       NC: nc,
       NA : na,
-      tor : TOR
+   
     
     });
 
@@ -38,7 +38,7 @@ document.getElementById("Book").onclick = function () {
   alertMessage += "Check-out: " + Checkout + "\n";
   alertMessage += "Adults: " + na + "\n";
   alertMessage += "Children: " + nc + "\n";
-  alertMessage += "Type and no. of Rooms: " + TOR + "\n";
+
 
 
     alert(alertMessage);
