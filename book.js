@@ -38,6 +38,7 @@ document.getElementById("Book").onclick = function () {
   alertMessage += "Check-out: " + Checkout + "\n";
   alertMessage += "Adults: " + na + "\n";
   alertMessage += "Children: " + nc + "\n";
+  alertMessage += "Type and no. of Rooms: " + TOR + "\n";
 
 
     alert(alertMessage);
