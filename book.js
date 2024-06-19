@@ -1,4 +1,4 @@
-var Name, Email, Ph, Checkin, Checkout;
+var Name, Email, Ph, Checkin, Checkout,nc,na,TR;
 
 function readFom() {
   Name= document.getElementById("name").value;
@@ -8,6 +8,7 @@ function readFom() {
   Checkout = document.getElementById("checkout").value;
   nc = document.getElementById("NC").value;
   na = document.getElementById("NA").value;
+  TR = document.getElementById("tr").value;
   console.log(Name, Email, Ph, Checkin, Checkout,nc,na);
 }
 
@@ -25,6 +26,7 @@ document.getElementById("Book").onclick = function () {
       checkout: Checkout,
       NC: nc,
       NA : na,
+      tr : TR,
     });
 
   var alertMessage = "Your booking request is successful with the following details : \n\n";
@@ -33,8 +35,9 @@ document.getElementById("Book").onclick = function () {
   alertMessage += "Phone: " + Ph + "\n";
   alertMessage += "Check-in: " + Checkin + "\n";
   alertMessage += "Check-out: " + Checkout + "\n";
-  alertMessage += "NA: " + na + "\n";
-  alertMessage += "NC: " + nc + "\n";
+  alertMessage += "Adults: " + na + "\n";
+  alertMessage += "Children: " + nc + "\n";
+  alertMessage += "Type of room: " + TR + "\n";
 
     alert(alertMessage);
 
