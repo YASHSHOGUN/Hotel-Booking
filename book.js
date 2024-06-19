@@ -27,7 +27,7 @@ document.getElementById("Book").onclick = function () {
       NA : na,
     });
 
-  var alertMessage = "Your booking request is successful.\n\n";
+  var alertMessage = "Your booking request is successful with the following details : \n\n";
   alertMessage += "Name: " + Name + "\n";
   alertMessage += "Email: " + Email + "\n";
   alertMessage += "Phone: " + Ph + "\n";
