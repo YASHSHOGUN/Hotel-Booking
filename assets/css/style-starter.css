@@ -11735,7 +11735,7 @@ button.btn-contact:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 120vh;
+  height: 180%;
   width: 100%;
   background-image: url('Bg.jpeg'); /* URL of your background image */
   background-size: contain; /* Ensure the full image is displayed without cropping */
