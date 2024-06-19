@@ -38,15 +38,7 @@ document.getElementById("Book").onclick = function () {
 
     alert(alertMessage);
 
-  
-  alert("Your request is successful. Please wait for 48 hours for the confirmation.");
-  document.getElementById("name").value = "";
-  document.getElementById("email").value = "";
-  document.getElementById("Ph").value = "";
-  document.getElementById("checkin").value = "";
-  document.getElementById("NA").value = "";
-  document.getElementById("NC").value = "";
-  document.getElementById("checkout").value = "";
+ 
 };
 
 
