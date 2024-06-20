@@ -5,10 +5,7 @@ function readFom() {
   Email1 = document.getElementById("email1").value;
   Subject = document.getElementById("subject").value;
   Message = document.getElementById("message").value;
-  Checkout = document.getElementById("checkout").value;
-  nc = document.getElementById("NC").value;
-  na = document.getElementById("NA").value;
-
+  
   console.log(Name1, Email1, Subject, message);
 }
 
@@ -22,8 +19,7 @@ document.getElementById("sub").onclick = function () {
       name1: Name1,
       email1: Email1,
        subject : Subject,
-      message: Message,
-      
+      message: Message,  
    
     });
 
